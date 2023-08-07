@@ -1,0 +1,75 @@
+body {
+    background-color: #2C363F;
+    color: #F2F5EA;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #2C363F;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.interact {
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid #F2F5EA;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.interact:hover {
+    cursor: pointer;
+    background-color: #e75a7c;
+}
+
+a {
+    text-decoration: none;
+    color: #F2F5EA;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 5px;
+    border-color: #F2F5EA;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Media query for iPhone SE */
+@media screen and (max-width: 320px) {
+    .contact-info {
+        max-width: 280px;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        padding: 5px;
+        flex-wrap: wrap;
+    }
+
+    .interact {
+        margin: 5px;
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,89 @@
+/* Common styles for all screen sizes */
+body {
+    background-color: #2C363F;
+    color: #F2F5EA;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: #2C363F;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    -webkit-text-fill-color: #F2F5EA;
+}
+
+.interact:hover {
+    cursor: pointer;
+    -webkit-text-fill-color: #e75a7c;
+}
+
+.content {
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    -webkit-text-fill-color: #F2F5EA;
+}
+
+a:hover {
+    -webkit-text-fill-color: #e75a7c;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: #e75a7c;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    nav {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .interact {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .square {
+        bottom: 20px;
+        width: 30px;
+        height: 30px;
+    }
+}
